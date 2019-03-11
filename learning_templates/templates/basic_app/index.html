@@ -1,0 +1,11 @@
+
+{% extends 'basic_app/base.html' %}
+{% block title %}
+  <title>Home page</title>
+{% endblock title %}
+{% block body_block %}
+  <h1>Welcome to index</h1>
+  {% comment %} <h2>This is index.htm showing</h2> {% endcomment %}
+  <h2>{{ text|cut:'world' }}</h2>
+  <h2>{{ number|add:'250' }}</h2>
+{% endblock %}  
